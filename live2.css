@@ -1,0 +1,392 @@
+/* 	...........................Search_bar...........................  */
+.header .search_menu {
+	float: right;
+}
+.header .search_menu a{
+	font-size: 18px;
+	color: #333;
+	text-decoration: none;
+	border: 0px solid #FC2121;
+	padding: 0px 0px;
+	line-height: 2;
+	-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+			-ms-transition: all .3s ease;
+				-o-transition: all .3s ease;
+					transition: all .3s ease;
+}
+.header .search_menu a:hover{
+	color: #15d698;
+	background: ;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+			-ms-transition: all .3s ease;
+				-o-transition: all .3s ease;
+					transition: all .3s ease;  
+}
+
+/* Search Style */ 
+.header .search_menu #search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+			-ms-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	    -moz-transform: translate(0px, -100%) scale(0, 0);
+			-ms-transform: translate(0px, -100%) scale(0, 0);
+				-o-transform: translate(0px, -100%) scale(0, 0);
+					transform: translate(0px, -100%) scale(0, 0);    
+    opacity: 0;
+    display: none;
+}
+.header .search_menu #search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+		-moz-transform: translate(0px, 0px) scale(1, 1);
+			-ms-transform: translate(0px, 0px) scale(1, 1);
+				-o-transform: translate(0px, 0px) scale(1, 1);
+					transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+    z-index: 106;
+    display: block;
+}
+
+.header .search_menu #search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -51px;
+    width: 60%;
+    margin-left: 20%;
+    color: rgb(0, 0, 0);
+  	background: transparent;
+  	border: none;
+  	border-bottom: 1.5px solid #999;
+    font-size: 30px;
+  	font-family: Roboto;
+    font-weight: 300;
+    text-align: center;
+    outline: none;
+  	padding: 10px;
+}
+.header .search_menu #search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+	opacity: 1;
+	font-size: 27px;
+  	color: #ccc;
+}
+.header .search_menu #search .close:hover{
+  color: #FC2121;
+  cursor: pointer;
+}
+
+
+/* 	.........................live2_home.css.........................  */
+
+
+body {
+	background-image: url('images/BG.png');
+	background-size: 2050px;
+	font-family: "Proxima Nova";
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding: 60px 0px 0px 0px;
+}
+.sidenav h2 {
+	color: #fff;
+	margin: 0px 0px 20px 70px;
+	font-family: "Droid Serif";
+}
+.sidenav p {
+	color: #818181;
+	margin: 0px 0px 0px 70px;
+	font-family: "Georgia";
+}
+.sidenav .navbar, .headings .navbar, .footer .navbar {
+	margin: 20px 0px 20px 58px;
+	padding-top: 15px;
+}
+.sidenav .navbar a, .headings .navbar a, .footer .navbar a {
+	padding: 0px 15px 0px 15px;
+	color: #818181;
+	font-size: 16px;
+}
+.sidenav .navbar a:hover .fa-dribbble, .headings .navbar a:hover .fa-dribbble, .footer .navbar a:hover .fa-dribbble {
+	color: orange;
+}
+.sidenav .navbar a:hover .fa-linkedin, .headings .navbar a:hover .fa-linkedin, .footer .navbar a:hover .fa-linkedin {
+	color: #0077B5;
+}
+.sidenav .navbar a:hover .fa-instagram, .headings .navbar a:hover .fa-instagram, .footer .navbar a:hover .fa-instagram {
+	color: #C13584;
+}
+.sidenav .navbar a:hover .fa-twitter, .headings .navbar a:hover .fa-twitter, .footer .navbar a:hover .fa-twitter {
+	color: #1faae2;
+}
+.sidenav hr {
+	margin: 20px 60px 20px 68px;
+}
+.sidenav .jump a {
+	padding: 8px 8px 8px 70px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: "Droid Serif";
+	color: #fff;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav .jump a:hover {
+	color: #1faae2;
+	text-decoration: none;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	text-decoration: none;
+	color: #fff;
+}
+@media screen and (max-height: 450px) {
+	.header .sidenav {padding-top: 15px;}
+	.header .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width: 450px) {
+	.header .sidenav h2 {margin-top:56px;}
+}
+@media screen and (max-width: 375px) {
+	.header .headings h2{font-size:28px;}
+}
+.header {
+	padding: 20px 3.5% 0px;
+}
+.header .sidenav, .header .search_menu {
+	display: inline-block;
+}
+.header input, .header button {
+	border: none;
+	background-color: white;
+}
+.header input {
+	width: 100px;
+}
+.header .headings .navbar, .footer .navbar {
+	width: 190px;
+	margin: auto;
+}
+.header .headings h2 {
+	font-weight: bold;
+}
+.header .headings p {
+	color: #8f8f8f;
+	font-family: "Georgia";
+	font-style: italic;
+}
+.content {
+	margin: 0px 4%;
+}
+.content .row {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 20px;
+}
+.content .col-sm-3 {
+	background-color: #fff;
+	height: 425px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0px solid red;
+	margin-bottom: 23px;
+}
+.content .col-sm-3.last {
+	padding-right: ;
+}
+.content .col-sm-3 .inner {
+	background-color: #f5f5f5;
+	width: 100%;
+	height: 100%;
+}
+.content .col-sm-3 .inner p, .content .col-sm-3 .inner h3 {
+	margin: 0px;
+}
+.content .col-sm-3 .inner h3 {
+	font-family: "Georgia";
+	font-style: italic;
+}
+.content .col-sm-3 .post2 {
+	background-color: #16d598;
+	color: #ffffff;
+}
+.content .col-sm-3 .post3, .content .col-sm-3 .post5, .content .col-sm-3 .post12 {
+	background-color: white;
+}
+.content .col-sm-3 .post3 p, .content .col-sm-3 .post5 p, .content .col-sm-3 .post12 p {
+	color: #16d598;
+}
+.content .col-sm-3 .post2 p,.content .col-sm-3 .post2 h3 {
+	position: relative;
+	top: 170px;
+}
+.content .col-sm-3 .post3 p,.content .col-sm-3 .post3 h3, .content .col-sm-3 .post12 p, .content .col-sm-3 .post12 h3 {
+	position: relative;
+	top: 271px;
+}
+.content .col-sm-3 .post5 p,.content .col-sm-3 .post5 h3 {
+	position: relative;
+	top: 219px;
+}
+.content .col-sm-3 hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.content .col-sm-3 .date p {
+	color: #818181;
+	font-size: 11px;
+}
+.content .col-sm-3 p span {
+	color: #16d598;
+}
+.content .col-sm-3 .date, .content .col-sm-3 .links {
+	display: inline-block;
+}
+.content .col-sm-3 .links {
+	float: right;
+}
+.content .col-sm-3 .links a {
+	color: #c8c8c8;
+	padding-left: 4px;
+}
+.content .col-sm-3 .links a:hover .fa.fa-envelope {
+	color: #16d598;
+}
+.content .col-sm-3 .links a:hover .fa.fa-facebook {
+	color: #2b75b2;
+}
+.content .col-sm-3 .links a:hover .fa.fa-twitter {
+	color: #1faae2;
+}
+.footer {
+	margin: 200px 4% 60px;
+}
+.footer p {
+	font-family: "Proxima Nova";
+    color: #818181;
+}
+
+/* 	.........................live2_post.css.........................  */
+
+
+.content_post .row {
+	margin: 0px 15px 30px;
+}
+.content_post .row .image {
+	width: 800px;
+	margin: 70px auto 50px;
+}
+.content_post  .row .image img {
+	width: 100%;
+}
+@media screen and (max-width: 844px) {
+	.content_post .row .image {width: 100%;}
+	.content_post .row .image img {width: 100%;}
+}
+.content_post .row .image img:hover {
+	border: 1px solid #959595;
+}
+.content_post .col-sm-6 .inner {
+	width: 100%;
+	height: 100%;
+}
+.content_post .col-sm-6 .inner p, .content .col-sm-6 .inner h3 {
+	margin: 0px;
+}
+.content_post .col-sm-6 .inner p {
+	color: #16d598;
+}
+.content_post .col-sm-6 .inner h3 {
+	font-family: "Georgia";
+	font-style: italic;
+}
+.content_post .col-sm-6 .date p {
+	color: #818181;
+	font-size: 12px;
+}
+.content_post .col-sm-6 p span {
+	color: #16d598;
+}
+.content_post .col-sm-6 .date, .content_post .col-sm-6 .links {
+	display: inline-block;
+}
+.content_post .col-sm-6 .links {
+	float: right;
+}
+.content_post .col-sm-6 .links a {
+	color: #c8c8c8;
+	padding-left: 4px;
+}
+.content_post .col-sm-6 .links a:hover .fa.fa-envelope {
+	color: #16d598;
+}
+.content_post .col-sm-6 .links a:hover .fa.fa-facebook {
+	color: #2b75b2;
+}
+.content_post .col-sm-6 .links a:hover .fa.fa-twitter {
+	color: #1faae2;
+}
+.content_post .col-sm-6 hr{
+	margin: 0px 0px 10px;
+}
+.content_post .col-sm-6 .mover a {
+	display: inline-block;
+	color: #16d598;
+	text-decoration: none;
+}
+.content_post .col-sm-6 .mover .next {
+	float: right;
+}
+.content_post .col-sm-6.row2 h3 {
+	font-weight: bold;
+}
+.content_post .col-sm-6.row2 p {
+	color: #a1a1a1;
+	font-size: 12.3px;
+}
+.content_post .col-sm-6.row3 {
+	font-family: "Georgia";
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 20px;
+}
+.content_post .col-sm-6.row3 h3 {
+	margin-top: 10px;
+	font-size: 22px;
+}
+.content_post .col-sm-6.row3 span {
+	color: #16d598;
+}
+.content_post .col-sm-6.row3 .box {
+	background-color: #f5f5f5;
+	color: #f5f5f5;
+	padding: 2.5px 7.5px;
+    margin-right: 10px;
+}

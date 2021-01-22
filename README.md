@@ -1,0 +1,1 @@
+Made this site while on intership back in my 3rd year to practice responsive design and dynamic features powered by javascript.
